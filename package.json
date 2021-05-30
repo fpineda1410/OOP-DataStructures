@@ -1,0 +1,20 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "oop-practice",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "type":"module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpineda1410/OOP-DataStructures.git"
+  },
+  "author": "felipe pineda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fpineda1410/OOP-DataStructures/issues"
+  },
+  "homepage": "https://github.com/fpineda1410/OOP-DataStructures#readme"
+}

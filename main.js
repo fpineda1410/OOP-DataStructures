@@ -1,6 +1,6 @@
+import LogCalculator from "./special_modules.js";
 
-
-class NumberReceiver {
+class NumberReceiver  {
 
     constructor (params) {
         this.number1=params.number1;
@@ -9,6 +9,7 @@ class NumberReceiver {
         this.sum();
         this.multiply();
         this.divide();
+        this.logs_calc();
 
     };
 
@@ -30,6 +31,11 @@ class NumberReceiver {
     divide () {
         return this.number1/this.number2;
     };
+
+    logs_calc () {
+        this.log_object=new LogCalculator (this.number1,this.number2);
+        return this.log_object.logarithm_calc()+this.log_object.natural_log();
+    }
 }
 
 const numberDict = {
@@ -37,10 +43,10 @@ const numberDict = {
     number2:2
 };
 
-
 const numbers= new NumberReceiver (numberDict);
 
 console.log (numbers.sum());
 console.log (numbers.multiply());
 console.log (numbers.divide());
+console.log (numbers.logs_calc());
 
